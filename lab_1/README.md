@@ -1,3 +1,21 @@
+# 1: Измерение RTT для списка доменов
+
+Этот скрипт на Python измеряет среднее время RTT (Round-Trip Time) для списка доменов и сохраняет результаты в CSV-файл. Скрипт кроссплатформенный и может быть использован на Windows, Linux и macOS.
+
+## Установка
+
+Установите библиотеку pythonping:
+
+```bash
+  pip install pythonping
+```
+
+Скачайте или склонируйте этот репозиторий:
+
+```bash
+  git clone https://github.com/ufimtsevv/networks.git
+  cd lab_1
+```
 
 ## Использование
 
