@@ -1,0 +1,4 @@
+yandex.ru
+google.com
+stackoverflow.com
+github.com
