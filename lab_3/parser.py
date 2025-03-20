@@ -1,3 +1,6 @@
+import time
+import csv
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -5,18 +8,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import WebDriverException
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
-import time
-import csv
 
 
 def init_driver():
     """Инициализирует драйвер Selenium. Если драйвер не найден, автоматически скачивает его."""
     try:
-        driver = webdriver.Chrome(options=options)
-        return driver
+        return webdriver.Chrome(options=options)
     except WebDriverException:
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-        return driver
+        return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
 def parse_books(driver):
     """Парсит книги на текущей странице."""
