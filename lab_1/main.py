@@ -1,5 +1,6 @@
 import csv
 import argparse
+
 from pythonping import ping
 
 def read_domains(file_path):
