@@ -15,9 +15,7 @@ def init_driver():
         driver = webdriver.Chrome(options=options)
         return driver
     except WebDriverException:
-        print("Драйвер не найден. Автоматическая загрузка и установка...")
         driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-        print("Драйвер успешно установлен.")
         return driver
 
 def parse_books(driver):
