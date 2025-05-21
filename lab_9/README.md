@@ -1,5 +1,5 @@
 
-# 7: Сравнение IPv4 и IPv6 в Docker
+# 9: Сравнение IPv4 и IPv6 в Docker
 Простое приложение на FastAPI с PostgreSQL и Nginx в Docker-контейнерах + блокировка российских IP на уровне Nginx с HTML-заглушкой.
 
 ---
